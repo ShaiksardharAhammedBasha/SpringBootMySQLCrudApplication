@@ -46,14 +46,16 @@ public class EmpService {
     }
 
     // delete employee
-    public void deleteEmployeeById(int id) {
+    public void deleteEmployeeById_And_ByUnitTesting(int id) {
         repo.deleteById(id);
     }
 
     // update employee By Id
-    public void updateEmployeeById(Employee employee, int id) {
+    public void updateEmployeeByIdAndByEmployeeDate(Employee employee, int id) {
         employee.setCity("Bang123");
         employee.setBranch("Hdfc123");
+        employee.setEid(123L);
+        employee.setPincode(123L);
     }
 }
 
