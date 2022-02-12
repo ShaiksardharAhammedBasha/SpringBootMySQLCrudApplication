@@ -57,8 +57,8 @@ public class EmpService {
     }
 
     // checking commit
-    public String check507pmCommit() {
-        return "Time is 5:07 pm";
+    public String check508pmCommit() {
+        return "Time is 5:08 pm";
     }
 }
 
