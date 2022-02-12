@@ -45,21 +45,16 @@ public class EmpService {
         return repo.count();
     }
 
-    // delete employee
-    public long deleteEmployeeById_And_ByUnitTesting(int id) {
-         repo.deleteById(id);
-         return id;
-    }
-
-    // update employee By Id
-    public void updateEmployeeByIdAndByEmployeeCity(Employee employee, int id) {
-        employee.setCity("Bang123");
-    }
-
-    // checking commit
-    public String check508pmCommit() {
-        return "Time is 5:08 pm";
-    }
+    /*
+    // checking increment status
+    protected boolean employeeIncrementStatusCheck(int eid) {
+        Employee employee = null;
+        if (eid == 0) {
+            return false;
+        } (eid == employee.isIncrementStatus().equals(false)) {
+            return false;
+        }
+    } */
 }
 
 
