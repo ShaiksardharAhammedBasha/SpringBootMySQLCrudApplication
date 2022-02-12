@@ -11,6 +11,9 @@ public class EmpService {
     @Inject
     private EmpRepo repo;
 
+    @Inject
+    private Employee employee;
+
     // saving employee into db
     protected void saveEmployeeDataInDB(Employee employee) {
         if(employee == null) {
@@ -42,7 +45,16 @@ public class EmpService {
         return repo.count();
     }
 
+    // delete employee
+    public void deleteEmployeeById(int id) {
+        repo.deleteById(id);
+    }
 
+    // update employee By Id
+    public void updateEmployeeById(Employee employee, int id) {
+        employee.setCity("Bang123");
+        employee.setBranch("Hdfc123");
+    }
 }
 
 
