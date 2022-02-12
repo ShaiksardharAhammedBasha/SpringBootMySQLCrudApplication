@@ -42,16 +42,7 @@ public class EmpService {
         return repo.count();
     }
 
-    /*
-    // checking increment status
-    protected boolean employeeIncrementStatusCheck(int eid) {
-        Employee employee = null;
-        if (eid == 0) {
-            return false;
-        } (eid == employee.isIncrementStatus().equals(false)) {
-            return false;
-        }
-    } */
+
 }
 
 

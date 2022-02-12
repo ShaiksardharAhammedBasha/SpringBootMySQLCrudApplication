@@ -33,10 +33,7 @@ public class EmpController {
     }
 
     // checking Increment Status
-   /* @GetMapping(value = "/employee/incrementstatus/{id}")
-    public boolean checkingEmployeeIncrementStatus(@PathVariable("id") int eid) {
-        return service.employeeIncrementStatusCheck();
-    } */
+
 }
 
 
