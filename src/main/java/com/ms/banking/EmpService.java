@@ -11,6 +11,9 @@ public class EmpService {
     @Inject
     private EmpRepo repo;
 
+    @Inject
+    private Employee employee;
+
     // saving employee into db
     protected void saveEmployeeDataInDB(Employee employee) {
         if(employee == null) {
@@ -42,16 +45,21 @@ public class EmpService {
         return repo.count();
     }
 
-    /*
-    // checking increment status
-    protected boolean employeeIncrementStatusCheck(int eid) {
-        Employee employee = null;
-        if (eid == 0) {
-            return false;
-        } (eid == employee.isIncrementStatus().equals(false)) {
-            return false;
-        }
-    } */
+    // delete employee
+    public long deleteEmployeeById_And_ByUnitTesting(int id) {
+         repo.deleteById(id);
+         return id;
+    }
+
+    // update employee By Id
+    public void updateEmployeeByIdAndByEmployeeCity(Employee employee, int id) {
+        employee.setCity("Bang123");
+    }
+
+    // checking commit
+    public String check507pmCommit() {
+        return "Time is 5:07 pm";
+    }
 }
 
 
